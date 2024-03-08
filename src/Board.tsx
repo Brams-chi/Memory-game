@@ -67,6 +67,7 @@ export const Board: React.FC<Props> = ({ cards }) => {
           return (
             <Grid item xs={2} sm={4} md={4} key={index}>
               <CardImages
+                id={id}
                 isTurnedOver={isFlipped}
                 url={card.fields.image.url}
                 title={card.fields.image.title}

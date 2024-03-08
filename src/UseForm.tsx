@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Button, TextField, Typography } from '@mui/material';
 import useStore from './store/store';
@@ -9,8 +8,8 @@ const UserForm = () => {
   const { setUsername } = useStore();
 
   const onSubmit = (data: any) => {
-    setUsername(data.username);
-    sessionStorage.setItem('username', data.username);
+    setUsername(data.username)
+    sessionStorage.setItem('username', data.username)
   };
 
   return (
